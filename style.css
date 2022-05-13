@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300&display=swap");
+* {
+  font-family: 'Abril Fatface', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #DEEBDE;
+}
+
+header {
+  padding: 0 2rem;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header img {
+  width: 20%;
+}
+
+header .construction {
+  width: 80%;
+  margin: 3rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .construction .construct {
+  background: #87A187;
+  border-radius: 20px;
+  color: white;
+  padding: 3rem 8rem;
+  width: 50%;
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
+
+main {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section {
+  background: url(./images/conscious-design-ubeslMfS1lk-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-filter: opacity(70%);
+          filter: opacity(70%);
+  width: 80%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 3rem;
+  color: black;
+  font-size: 3rem;
+  letter-spacing: 5px;
+  border-radius: 20px;
+}
+
+footer {
+  margin-top: 2rem;
+  background: #87A187;
+  color: white;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1rem;
+}
+
+footer .title {
+  font-size: 2rem;
+  letter-spacing: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .elements ul {
+  list-style-type: none;
+}
+
+footer .elements ul li {
+  font-family: 'Poppins', sans-serif;
+  margin: 0.5rem;
+}
+
+footer .elements ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media all and (max-width: 480px) {
+  * {
+    overflow-x: hidden;
+  }
+  header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0;
+  }
+  header img {
+    width: 60%;
+  }
+  header .construction {
+    width: 100%;
+    margin: 0 1rem 0 0;
+  }
+  header .construction .construct {
+    width: 80%;
+    font-size: 1.5rem;
+  }
+  main {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  main section {
+    width: 50%;
+    font-size: 1rem;
+    height: 20vh;
+    padding: 1rem;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .title {
+    font-size: 1.5rem;
+  }
+  footer .elements ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

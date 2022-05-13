@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300&display=swap');
+
+$maincolor: #DEEBDE;
+$secondcolor: #87A187;
+$textcolor: black;
+
+*{
+  font-family: 'Abril Fatface', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: $maincolor;
+}
+
+header{
+  padding: 0 2rem;
+  width: 100vw;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  img{
+    width: 20%;
+  }
+  .construction{
+    width: 80%;
+    margin: 3rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .construct{
+      background: $secondcolor;
+      border-radius: 20px;
+      color: white;
+      padding: 3rem 8rem;
+      width: 50%;
+      font-size: 2rem;
+      letter-spacing: 3px;
+    }
+  }
+}
+
+main{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  section{
+    background: url(./images/conscious-design-ubeslMfS1lk-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: opacity(70%);
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+    color: $textcolor;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    border-radius: 20px;
+
+  }
+}
+footer{
+  margin-top: 2rem;
+  background: $secondcolor;
+  color: white;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  .title{
+    font-size: 2rem;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .elements{
+    ul{
+      list-style-type: none;
+      li{
+        font-family: 'Poppins', sans-serif;
+        margin: 0.5rem;
+        a{
+          text-decoration: none;
+          color: white;
+          font-family: 'Poppins', sans-serif;;
+
+        }
+      }
+    };
+  }
+}
+
+@media all and (max-width: 480px) {
+  *{
+    overflow-x: hidden;
+  }
+  header{
+    flex-wrap: wrap;
+    padding: 0;
+    img{
+      width: 60%;
+    }
+    .construction{
+      width: 100%;
+      margin: 0 1rem 0 0;
+      .construct{
+        width: 80%;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  main{
+    justify-content: flex-end;
+    align-items: flex-end;
+    section{
+      width: 50%;
+      font-size: 1rem;
+      height: 20vh;
+      padding: 1rem;
+    }
+  }
+
+  footer{
+    flex-direction: column;
+    .title{
+      font-size: 1.5rem;
+    }
+    .elements{
+      ul{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+      }
+    }
+  }
+}
