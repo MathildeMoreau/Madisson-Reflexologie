@@ -22,7 +22,7 @@ header {
 }
 
 header img {
-  width: 20%;
+  width: 25%;
 }
 
 header .construction {
@@ -71,7 +71,6 @@ main section {
   -webkit-filter: opacity(70%);
           filter: opacity(70%);
   width: 80%;
-  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,22 +80,24 @@ main section {
   text-align: center;
   padding: 3rem;
   color: black;
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: 5px;
   border-radius: 20px;
 }
 
 footer {
-  margin-top: 2rem;
   background: #87A187;
   color: white;
   width: 100vw;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 1rem;
+  padding: 0.5rem;
+  position: fixed;
+  bottom: 0;
 }
 
 footer .title {
@@ -119,7 +120,7 @@ footer .elements ul {
 
 footer .elements ul li {
   font-family: 'Poppins', sans-serif;
-  margin: 0.5rem;
+  margin: 0.3rem;
 }
 
 footer .elements ul li a {
@@ -128,7 +129,7 @@ footer .elements ul li a {
   font-family: 'Poppins', sans-serif;
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 768px) {
   * {
     overflow-x: hidden;
   }
@@ -147,6 +148,7 @@ footer .elements ul li a {
   header .construction .construct {
     width: 80%;
     font-size: 1.5rem;
+    padding: 2rem;
   }
   main {
     -webkit-box-pack: end;
@@ -160,16 +162,19 @@ footer .elements ul li a {
     width: 50%;
     font-size: 1rem;
     height: 20vh;
-    padding: 1rem;
+    padding: 2rem;
+    overflow: hidden;
   }
   footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    position: static;
+    margin: 0;
   }
   footer .title {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   footer .elements ul {
     display: -webkit-box;
